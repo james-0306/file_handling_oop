@@ -20,7 +20,13 @@ class NumberSeperator:
             else:
                 self.odd_numbers.append(num)
 
-    
+    def creating_a_file(self):
+        with open(self.file_name, "w") as even_number_file:
+            for num in self.even_numbers:
+                even_number_file.write(str(num) + " ")
+                
+
+
 
 
 
