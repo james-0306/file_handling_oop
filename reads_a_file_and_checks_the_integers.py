@@ -4,4 +4,11 @@ class NumberSeperator:
         self.input_numbers = []
         self.even_numbers = []
         self.odd_numbers = []
-    
+
+    def read_numbers(self):
+        file = open(self.file_name, "r")
+        data = file.read()
+        file.close()
+
+        for num in data.split():
+            self.input_numbers.append(num)
