@@ -12,3 +12,16 @@ class NumberSeperator:
 
         for num in data.split():
             self.input_numbers.append(num)
+
+    def separate_the_integers(self):
+        for num in self.input_numbers:
+            if num % 2 == 0:
+                self.even_numbers.append(num)
+            else:
+                self.odd_numbers.append(num)
+
+    
+
+
+
+
