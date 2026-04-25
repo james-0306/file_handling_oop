@@ -24,7 +24,10 @@ class NumberSeperator:
         with open(self.file_name, "w") as even_number_file:
             for num in self.even_numbers:
                 even_number_file.write(str(num) + " ")
-                
+
+        with open(self.file_name, "w") as odd_number_file:
+            for num in self.odd_numbers:
+                odd_number_file.write(str(num) + " ")
 
 
 
